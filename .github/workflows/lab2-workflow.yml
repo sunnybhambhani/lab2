@@ -3,7 +3,7 @@ name: Exploring Workflow Dispatch Trigger
 on:
   workflow_dispatch:
     inputs:
-      run_job: 
+      run-job: 
         type: boolean
         description: "Run Specific Job"
         required: false
@@ -22,4 +22,5 @@ jobs:
     steps:
       - run: echo ${{ github.event.inputs.custom_message }}
         name: Printing Custom Message
+
 
