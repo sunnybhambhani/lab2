@@ -20,7 +20,9 @@ jobs:
   job2:
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ github.event.inputs.custom_message }}
+      - run: echo ${{ inputs.custom_message }}
         name: Printing Custom Message
+      - run: echo ${{ inputs.run-job }} 
+        name: Printing run-job boolean value
 
 
